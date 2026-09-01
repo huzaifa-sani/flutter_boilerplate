@@ -9,6 +9,7 @@ import '../../../../../../utils/constants/app_string.dart';
 import '../widgets/setting_item.dart';
 
 class SettingScreen extends StatelessWidget {
+
   const SettingScreen({super.key});
 
   @override
@@ -30,28 +31,25 @@ class SettingScreen extends StatelessWidget {
             padding: .symmetric(horizontal: 20.w, vertical: 24.h),
             child: Column(
               children: [
-                /// Change password
+
                 SettingItem(
                   title: AppString.changePassword,
                   iconData: Icons.lock_outline,
                   onTap: () => Get.toNamed(AppRoutes.changePassword),
                 ),
 
-                /// Terms
                 SettingItem(
                   title: AppString.termsOfServices,
                   iconData: Icons.gavel,
                   onTap: () => Get.toNamed(AppRoutes.termsOfServices),
                 ),
 
-                /// Privacy
                 SettingItem(
                   title: AppString.privacyPolicy,
                   iconData: Icons.privacy_tip_outlined,
                   onTap: () => Get.toNamed(AppRoutes.privacyPolicy),
                 ),
 
-                /// Delete account
                 SettingItem(
                   title: AppString.deleteAccount,
                   iconData: Icons.delete_outline_rounded,
