@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../../../../config/route/app_routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../../component/bottom_nav_bar/common_bottom_bar.dart';
 import '../../../../component/pop_up/common_pop_menu.dart';
 import '../../../../component/text/common_text.dart';
 import '../controller/setting_controller.dart';
@@ -69,8 +68,6 @@ class SettingScreen extends StatelessWidget {
         },
       ),
 
-      /// Bottom nav
-      bottomNavigationBar: const CommonBottomNavBar(currentIndex: 0),
     );
   }
 }

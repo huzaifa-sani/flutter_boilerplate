@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import '../../component/dash_board/screen/dash_board_Screen.dart';
 import '../../features/auth/change_password/presentation/screen/change_password_screen.dart';
 import '../../features/auth/forgot password/presentation/screen/create_password.dart';
 import '../../features/auth/forgot password/presentation/screen/forgot_password.dart';
@@ -36,6 +37,7 @@ class AppRoutes {
   static const String privacyPolicy = '/privacy_policy_screen.dart';
   static const String termsOfServices = '/terms_of_services_screen.dart';
   static const String setting = '/setting_screen.dart';
+  static const String dash_board_Screen = '/dash_board_Screen.dart';
 
   static List<GetPage<String>> routes = [
     GetPage(name: splash, page: () => const SplashScreen()),
@@ -46,6 +48,7 @@ class AppRoutes {
     GetPage(name: forgotPassword, page: () => ForgotPasswordScreen()),
     GetPage(name: verifyEmail, page: () => VerifyScreen()),
     GetPage(name: createPassword, page: () => CreatePassword()),
+    GetPage(name: dash_board_Screen, page: () => DashboardScreen()),
     GetPage(name: changePassword, page: () => ChangePasswordScreen()),
     GetPage(name: notifications, page: () => const NotificationScreen()),
     GetPage(name: chat, page: () => const ChatListScreen()),
